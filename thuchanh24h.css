@@ -1,0 +1,265 @@
+*{
+    box-sizing: inherit;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.app{
+    height: 2000px;
+}
+.header{
+    width: 100%;
+    position: initial;
+    height: 50px;
+    background-color: #78b43d;
+    margin: 0 auto;
+}
+.header__child .grid{
+    position: relative;
+}
+.grid{
+    width: 1004px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.header__navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 815px;
+    z-index: 1;
+}
+.header__navbar-list{
+    border-right: #90c95a solid 1px;
+    height: 50px;
+    width: 764px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.header__navbar-item{
+    vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+}
+.header__navbar-item:hover{
+    background-color:#609a26;;
+}
+.header__navbar-item-link{
+    text-decoration: none;
+}
+.header__navbar-item-icon{
+    display: block;
+    text-align: center;
+}
+.header__navbar-item-link:first-child{
+    position: relative;
+    display: block;
+    height: 50px;
+    padding: 3px 3px 0 3px;
+    box-sizing: border-box;
+}
+.header__navbar-item-link:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.header__navbar-item-title{
+    color: #fff;
+    font-size: 10px;
+    padding: 0 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -24px;
+}
+.hotnews{
+    display: inline-block;
+    background: url(https://cdn.24h.com.vn/images/Hot-092018.png) no-repeat;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    right: 6px;
+    top: 0;
+}
+/* list child */
+.header__navbar-child{
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.header__navbar-item:hover .header__navbar-child{
+    display: block;
+}
+.header__navbar-list-child{
+    position: absolute;
+    padding: 0;
+    background-color: greenyellow;
+    width: 200px;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.header__navbar-item-child{
+    list-style: none;
+}
+.header__navbar-item-child:hover a{
+    color: #fff;
+    background: #78b43d url(https://cdn.24h.com.vn/images/2014/menuDot.gif) 13px 10px no-repeat;
+}
+.header__navbar-item-child a{
+    color: #000;
+    border-right: 0;
+    padding: 6px 0 5px 25px;
+    background: #aad862 url(https://cdn.24h.com.vn/images/2014/menuDot.gif) 13px 10px no-repeat;
+    text-decoration: none;
+    float: left;
+    width: 100%;
+    line-height: 16px;
+    border-bottom: #78b43d solid 1px;
+}
+
+/* search */
+.header__navbar-search{
+    position: absolute;
+    height: 45px;
+    float: right;
+    right: 0;
+    border-right: #90c95a solid 1px;
+    padding-right: 8px;
+    padding-top: 5px;
+}
+.header__navbar-search:hover{
+    width: 100%;
+}
+
+.header__navbar-search-item{
+    position: relative;
+    float: right;
+    width: 32px;
+    height: 32px;
+    transition: all .35s,border-radius 0s;
+}
+.header__navbar-search-item:hover{
+    width: 100%;
+}
+.header__navbar-search-item:hover .header__navbar-search-input{
+    display: block;
+    /* border-radius: 3px; */
+    width: 92.6%;
+    opacity: 1;
+}
+.header__navbar-search-input{
+    display: none;
+    height: 40px;
+    border: 0 none;
+    padding-bottom: 0;
+    font-size: 14px;
+    color: #555;
+    opacity: 0;
+    padding-left: 10px;
+}
+.header__navbar-search-item a{
+    position: absolute;
+    right: 6px;
+    top: 8px;
+}
+.header__navbar-search-icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(https://cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4887px;
+}
+/* logo */
+.header__logo{
+    width: 90px;
+    float: left;
+}
+.header__logo-link{
+    padding-top: 5px;
+}
+/* list */
+.grid__container--list{
+    float: left;
+    width: 70px;
+    height: 38px;
+    border-left: 1px solid #90c95a;
+    border-right: 1px solid #90c95a;
+    padding: 12px 0 0 10px;
+}
+.grid__box--list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.grid__box--list-list{
+    margin: 19px 0 0 4px;
+}
+.grid__box--list-address{
+    padding-top: 31px !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 23px;
+    background: url(https://cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif) 15px 0px no-repeat;
+    text-decoration: none;
+}
+/* child list of list*/
+.grid__child--list{
+    display: none;
+    width: 157px;
+    margin-top: 6px;
+    margin-left: -128px;
+}
+.grid__container--list:hover .grid__child--list{
+    display: block;
+}
+.grid__child--list-list{
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.grid__child--item-address{
+    color: #000;
+    float: left;
+    width: 100%;
+    padding: 6px 0 5px 25px;
+    background: #aad862 url(https://cdn.24h.com.vn/images/2014/menuDot.gif) 13px 10px no-repeat;
+    border-bottom: #78b43d solid 1px;
+    text-decoration: none;
+    line-height: 16px;
+}
+.grid__child--item-address:hover{
+    color: #fff;
+    background-color: #78b43d;
+}
+/* grandchildren list of child list*/
+
+.grid__grandchildren--list{
+    display: none;
+    list-style: none;
+    width: 157px;
+    padding: 0;
+    position: absolute;
+    margin-left: 182px;
+    margin-top: 28px;
+}
+.grid__grandchildren--list-two{
+    margin-top: 56px;
+}
+.grid__grandchildren--list-address{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    padding: 6px 0 5px 25px;
+    background-color: #78b43d;
+    float: left;
+    border-bottom: #aad862 solid 1px;
+    line-height: 16px;
+}
+.grid__grandchildren--list-address:hover{
+    color: #fff;
+}
+.grid__child--list-item:hover .grid__grandchildren--list{
+    display: block;
+}
